@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&family=Dela+Gothic+One&display=swap"
+        rel="stylesheet">
+    <title>Tic Tac Toe Game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h1 class="game-name">Tic Tac Toe Game</h1>
+
+    <div class="nav">
+        <h1 class="round">Round of <span> </span></h1>
+        <div class='images'>
+            <img src="assets/reset.png" id="reset" alt="reset image">
+            <img src="assets/sound.png" id="sound" alt="play sound">
+            <img src="assets/mute.png" hidden id="mute" alt="mute sound">
+        </div>
+    </div>
+    <div class="content">
+        <div class='game empty' id='zero-0'></div>
+        <div class='game empty' id="zero-1"></div>
+        <div class='game empty' id="zero-2"></div>
+
+        <div class='game empty' id="one-0"></div>
+        <div class='game empty' id="one-1"> </div>
+        <div class='game empty' id="one-2"></div>
+
+        <div class='game empty' id="two-0"></div>
+        <div class='game empty' id="two-1"></div>
+        <div class='game empty' id="two-2"></div>
+    </div>
+
+
+    <div class="popup" hidden>
+    <div class="message">
+        <p>Player 1 win</p>
+        <button id="btn">OK</button>
+    </div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
